@@ -1,5 +1,7 @@
 # Deferrable
 
+[![Ruby](https://github.com/AkihikoITOH/deferrable/actions/workflows/main.yml/badge.svg)](https://github.com/AkihikoITOH/deferrable/actions/workflows/main.yml)
+
 [Go's `defer`](https://tour.golang.org/flowcontrol/12) brought to Ruby.
 
 ## Installation
@@ -16,7 +18,7 @@ And then execute:
 
 ### Single deferred call
 ```ruby
-require 'gopher-deferrable'
+require 'deferrable'
 
 class YourClass
   include Deferrable
@@ -25,7 +27,7 @@ class YourClass
     defer { puts 'world' }
     puts 'hello'
   end
-  
+
   deferrable :say_hello
 end
 
@@ -38,7 +40,7 @@ YourClass.new.say_hello
 
 ### Stacked deferred call
 ```ruby
-require 'gopher-deferrable'
+require 'deferrable'
 
 class YourClass
   include Deferrable
@@ -48,7 +50,7 @@ class YourClass
     puts 'hello'
     defer { puts 'world' }
   end
-  
+
   deferrable :say_hello
 end
 
@@ -62,7 +64,7 @@ YourClass.new.say_hello
 
 ### On Error
 ```ruby
-require 'gopher-deferrable'
+require 'deferrable'
 
 class YourClass
   include Deferrable
@@ -73,10 +75,10 @@ class YourClass
     oops
     defer { puts 'world' }
   end
-  
+
   def oops
     raise StandardError
-  end 
+  end
 
   deferrable :say_hello
 end
@@ -90,7 +92,7 @@ YourClass.new.say_hello
 
 ### In case of early return
 ```ruby
-require 'gopher-deferrable'
+require 'deferrable'
 
 class YourClass
   include Deferrable
@@ -101,7 +103,7 @@ class YourClass
     return 'i gotta go'
     defer { puts 'world' }
   end
-  
+
   deferrable :say_hello
 end
 
