@@ -1,6 +1,7 @@
 # Deferrable
 
 [![Ruby](https://github.com/AkihikoITOH/deferrable/actions/workflows/main.yml/badge.svg)](https://github.com/AkihikoITOH/deferrable/actions/workflows/main.yml)
+[![Gem Version](https://badge.fury.io/rb/gopher-deferrable.svg)](https://badge.fury.io/rb/gopher-deferrable)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0eaab84c2a4eb499dfa1/maintainability)](https://codeclimate.com/github/AkihikoITOH/deferrable/maintainability)
 
 [Go's `defer`](https://tour.golang.org/flowcontrol/12) brought to Ruby.
