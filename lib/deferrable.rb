@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require "pry"
 require "set"
 require_relative "deferrable/stack"
 require_relative "deferrable/version"
