@@ -1,8 +1,8 @@
 # Deferrable
 
-## Installation
-
 [Go's `defer`](https://tour.golang.org/flowcontrol/12) brought to Ruby.
+
+## Installation
 
 ```ruby
 gem 'gopher-deferrable'
