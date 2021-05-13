@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "deferable/version"
+require_relative "deferrable/version"
 
-module Deferable
+module Deferrable
   class Error < StandardError; end
   # Your code goes here...
 end

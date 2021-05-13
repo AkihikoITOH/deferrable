@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/deferable/version"
+require_relative "lib/deferrable/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "deferable"
-  spec.version = Deferable::VERSION
+  spec.name = "deferrable"
+  spec.version = Deferrable::VERSION
   spec.authors = ["Akihiko Ito"]
   spec.email = ["abc@akihiko.eu"]
 
   spec.summary = "Go's defer for Ruby"
   spec.description = "Go's defer for Ruby."
-  spec.homepage = "http://github.com/AkihikoITOH/deferable"
+  spec.homepage = "http://github.com/AkihikoITOH/deferrable"
   spec.license = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
