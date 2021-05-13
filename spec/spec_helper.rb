@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "deferrable"
+require "gopher-deferrable"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -3,21 +3,21 @@
 require_relative "lib/deferrable/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "deferrable"
+  spec.name = "gopher-deferrable"
   spec.version = Deferrable::VERSION
   spec.authors = ["Akihiko Ito"]
   spec.email = ["abc@akihiko.eu"]
 
-  spec.summary = "Go's defer for Ruby"
-  spec.description = "Go's defer for Ruby."
+  spec.summary = "Go's defer brought to Ruby"
+  spec.description = "For Gophers who are missing Go's defer"
   spec.homepage = "http://github.com/AkihikoITOH/deferrable"
   spec.license = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
-  # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "https://rubygems.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  # spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/AkihikoITOH/deferrable"
   # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.

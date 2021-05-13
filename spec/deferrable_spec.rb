@@ -46,6 +46,8 @@ RSpec.describe Deferrable do
         defer { deferred_call(3) }
       end
 
+      deferrable :single_defer, :multiple_defer, :multiple_defer_with_error, :multiple_defer_with_early_return
+
       attr_reader :deferred_calls
 
       private
@@ -81,7 +83,7 @@ RSpec.describe Deferrable do
 
       it "calls the deferred calls until that point and raises the error" do
         expect { subject }.to change { instance.deferred_calls }.to([2, 1]).and \
-          raise_error(SomeError)
+          raise_error(Klass::SomeError)
       end
     end
 
